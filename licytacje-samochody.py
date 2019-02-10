@@ -33,7 +33,7 @@ LAST = []
 i = 0
 oto = []
 url = "http://www.licytacje.komornik.pl/Notice/Filter/24?page="
-file_name = "licytacje_poznan.xlsx"
+file_name = "licytacje_samochody.xlsx"
 #endregion
 for page in range(1, 5):
     print(page)
@@ -48,7 +48,7 @@ for page in range(1, 5):
     for row in rows:
         tds = row.find_all('td')
         if len(tds) == 7:
-            if car.miasto(tds[4].get_text(strip=True))[1] == 'wielkopolskie':
+            # if car.miasto(tds[4].get_text(strip=True))[1] == 'wielkopolskie':
                 opis = car.opis(tds[3].get_text(strip=True), True)
                 data = car.data(tds[2].get_text(strip=True))
                 NUM.append(int(tds[0].get_text(strip=True)))
