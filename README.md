@@ -12,5 +12,7 @@ Run licytacje-samochody.py with Python 2.7(it may take some time)
           
 ## Results
 ![Output](output.png)
+
+Excel file attached in git
           
 
