@@ -11,6 +11,6 @@ Run licytacje-samochody.py with Python 2.7(it may take some time)
           5. Store all the data in excel using Pandas
           
 ## Results
-![screenshot][output.png]
+![Output](output.png)
           
 
